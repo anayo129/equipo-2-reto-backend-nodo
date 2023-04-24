@@ -4,5 +4,5 @@
 - Angelica Cuervo Marin.
 - Samuel Munera Echeverri.
 - Johan Gaviria Ocampo.
-- Sandy Dahiana Ruiz Higuita
-- Juan Carlos Murillo
+- Sandy Dahiana Ruiz Higuita.
+- Juan Carlos Murillo.
