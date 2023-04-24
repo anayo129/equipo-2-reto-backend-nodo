@@ -8,6 +8,6 @@
 - Juan Carlos Murillo.
 
 
-# links:
-- tablero: https://trello.com/b/aefAqUM2/tareas-proyecto-back
-- reuniones: http://meet.google.com/bcq-dsfp-xyx
+# Links:
+- Tablero: https://trello.com/b/aefAqUM2/tareas-proyecto-back
+- Reuniones: http://meet.google.com/bcq-dsfp-xyx
