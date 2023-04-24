@@ -1,0 +1,8 @@
+En la solución elegida por su equipo, deberán crear los siguientes componentes:
+ 
+1) Agregar un portal de autenticación a la plataforma. Este portal debe permitir a un usuario registrarse, ingresar y gestionar su acceso a la plataforma. Pueden usar OAuth para el acceso.
+2) Agregar un portal administrador para cargar contenidos desde el front (tipo blog administrator). Como sugerencia, usar Azure / AWS / Firebase para almacenar los archivos.
+3) Agregar un Pricing Component para acceder a contenido por suscripción. Como sugerencia, usar/obtener una API de PayPal o similar para este componente.
+ 
+En su trabajo en equipo, siempre deben preguntarse ¿Cómo puedo resolver el backend para crear esos tres items?
+La fecha límite para entregar lo que alcancen a desarrollar será el viernes 02 de junio de 2023. La socialización de sus creaciones será el lunes 05 de junio de 2023.
