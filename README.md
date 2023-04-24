@@ -1,6 +1,6 @@
 # equipo-2-reto-backend-nodo
 
-#integrantes:
+# integrantes:
 - Angelica Cuervo Marin.
 - Samuel Munera Echeverri.
 - Johan Gaviria Ocampo.
