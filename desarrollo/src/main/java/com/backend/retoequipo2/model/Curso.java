@@ -3,8 +3,8 @@ package com.backend.retoequipo2.model;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "cuerpos")
-public class Cuerpo {
+@Table(name = "cursos")
+public class Curso {
 
     @Id
     @Column(name = "id")
@@ -14,11 +14,18 @@ public class Cuerpo {
     @Column(name = "nombre")
     private String nombre;
 
+    @Column(name = "precio")
+    private String precio;
+
     @Column(name = "imagen")
     private String imagen;
 
     @Column(name = "descripcion")
     private String descripcion;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "id_cuerpo")
+    private Cuerpo cuerpo;
 
     public String getId() {
         return id;
@@ -34,6 +41,14 @@ public class Cuerpo {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
+    }
+
+    public String getPrecio() {
+        return precio;
+    }
+
+    public void setPrecio(String precio) {
+        this.precio = precio;
     }
 
     public String getImagen() {
@@ -52,7 +67,13 @@ public class Cuerpo {
         this.descripcion = descripcion;
     }
 
+    public Cuerpo getCuerpo() {
+        return cuerpo;
+    }
 
+    public void setCuerpo(Cuerpo cuerpo) {
+        this.cuerpo = cuerpo;
+    }
 
 
 }
