@@ -4,27 +4,27 @@ import jakarta.persistence.*;
 
 @Entity
 @Table(name = "cuerpos")
-public class Cuerpo {
+public class Body {
 
     @Id
     @Column(name = "id")
     @GeneratedValue( strategy = GenerationType.IDENTITY)
-    private String id;
+    private Long id;
 
     @Column(name = "nombre")
     private String nombre;
 
     @Column(name = "imagen")
-    private String imagen;
+    private byte[] imagen;
 
-    @Column(name = "descripcion")
+    @Column(name  = "descripcion")
     private String descripcion;
 
-    public String getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -36,11 +36,11 @@ public class Cuerpo {
         this.nombre = nombre;
     }
 
-    public String getImagen() {
+    public byte[] getImagen() {
         return imagen;
     }
 
-    public void setImagen(String imagen) {
+    public void setImagen(byte[] imagen) {
         this.imagen = imagen;
     }
 

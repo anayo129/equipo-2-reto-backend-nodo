@@ -4,12 +4,12 @@ import jakarta.persistence.*;
 
 @Entity
 @Table(name = "cursos")
-public class Curso {
+public class Course {
 
     @Id
     @Column(name = "id")
     @GeneratedValue( strategy = GenerationType.IDENTITY)
-    private String id;
+    private Long id;
 
     @Column(name = "nombre")
     private String nombre;
@@ -25,13 +25,13 @@ public class Curso {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "id_cuerpo")
-    private Cuerpo cuerpo;
+    private Body cuerpo;
 
-    public String getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -67,11 +67,11 @@ public class Curso {
         this.descripcion = descripcion;
     }
 
-    public Cuerpo getCuerpo() {
+    public Body getCuerpo() {
         return cuerpo;
     }
 
-    public void setCuerpo(Cuerpo cuerpo) {
+    public void setCuerpo(Body cuerpo) {
         this.cuerpo = cuerpo;
     }
 

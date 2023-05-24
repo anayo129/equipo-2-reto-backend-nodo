@@ -9,7 +9,7 @@ public class Material {
     @Id
     @Column(name = "id")
     @GeneratedValue( strategy = GenerationType.IDENTITY)
-    private String id;
+    private Long id;
 
     @Column(name = "nombre")
     private String nombre;
@@ -25,13 +25,13 @@ public class Material {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "id_curso")
-    private Curso curso;
+    private Course curso;
 
-    public String getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -67,11 +67,11 @@ public class Material {
         this.descripcion = descripcion;
     }
 
-    public Curso getCurso() {
+    public Course getCurso() {
         return curso;
     }
 
-    public void setCurso(Curso curso) {
+    public void setCurso(Course curso) {
         this.curso = curso;
     }
 }

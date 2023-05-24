@@ -9,7 +9,7 @@ public class User {
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private String id;
+    private Long id;
     @Column(name = "username")
     private String username;
     @Column(name= "password")
@@ -24,11 +24,11 @@ public class User {
     @Column(name = "created_by")
     private String createdBy = "SYSTEM";
 
-    public String getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
