@@ -18,14 +18,17 @@ public class Course {
     private String precio;
 
     @Column(name = "imagen")
-    private String imagen;
+    private byte[] imagen;
 
     @Column(name = "descripcion")
     private String descripcion;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinColumn(name = "id_cuerpo")
-    private Body cuerpo;
+    private Body id_cuerpo;
+
+    public Course() {
+    }
 
     public Long getId() {
         return id;
@@ -51,11 +54,11 @@ public class Course {
         this.precio = precio;
     }
 
-    public String getImagen() {
+    public byte[] getImagen() {
         return imagen;
     }
 
-    public void setImagen(String imagen) {
+    public void setImagen(byte[] imagen) {
         this.imagen = imagen;
     }
 
@@ -67,13 +70,11 @@ public class Course {
         this.descripcion = descripcion;
     }
 
-    public Body getCuerpo() {
-        return cuerpo;
+    public Body getId_cuerpo() {
+        return id_cuerpo;
     }
 
-    public void setCuerpo(Body cuerpo) {
-        this.cuerpo = cuerpo;
+    public void setId_cuerpo(Body id_cuerpo) {
+        this.id_cuerpo = id_cuerpo;
     }
-
-
 }
