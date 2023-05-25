@@ -2,6 +2,8 @@ package com.backend.retoequipo2.model;
 
 import jakarta.persistence.*;
 
+import java.util.List;
+
 @Entity
 @Table(name = "cursos")
 public class Course {
@@ -27,7 +29,16 @@ public class Course {
     @JoinColumn(name = "id_cuerpo")
     private Body id_cuerpo;
 
+    @OneToMany(mappedBy = "id_curso")
+    private List<Material> materials;
+
+
+
     public Course() {
+    }
+
+    public Course(Long id) {
+        this.id = id;
     }
 
     public Long getId() {
@@ -76,5 +87,13 @@ public class Course {
 
     public void setId_cuerpo(Body id_cuerpo) {
         this.id_cuerpo = id_cuerpo;
+    }
+
+    public List<Material> getMaterials() {
+        return materials;
+    }
+
+    public void setMaterials(List<Material> materials) {
+        this.materials = materials;
     }
 }

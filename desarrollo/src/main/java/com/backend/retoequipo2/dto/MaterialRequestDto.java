@@ -1,41 +1,23 @@
-package com.backend.retoequipo2.model;
+package com.backend.retoequipo2.dto;
 
-import jakarta.persistence.*;
+public class MaterialRequestDto {
 
-@Entity
-@Table(name = "material")
-public class Material {
-
-    @Id
-    @Column(name = "id")
-    @GeneratedValue( strategy = GenerationType.IDENTITY)
-    private Long id;
-
-    @Column(name = "nombre")
     private String nombre;
-
-    @Column(name = "precio")
     private String precio;
-
-    @Column(name = "imagen")
     private byte[] imagen;
-
-    @Column(name = "descripcion")
     private String descripcion;
+    private Long id_curso;
 
-    @ManyToOne
-    @JoinColumn(name = "id_curso")
-    private Course id_curso;
-
-    public Material() {
+    public MaterialRequestDto() {
+        // Constructor vacío necesario para deserialización JSON
     }
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
+    public MaterialRequestDto(String nombre, String precio, byte[] imagen, String descripcion, Long id_curso) {
+        this.nombre = nombre;
+        this.precio = precio;
+        this.imagen = imagen;
+        this.descripcion = descripcion;
+        this.id_curso = id_curso;
     }
 
     public String getNombre() {
@@ -70,11 +52,11 @@ public class Material {
         this.descripcion = descripcion;
     }
 
-    public Course getId_curso() {
+    public Long getId_curso() {
         return id_curso;
     }
 
-    public void setId_curso(Course id_curso) {
+    public void setId_curso(Long id_curso) {
         this.id_curso = id_curso;
     }
 }

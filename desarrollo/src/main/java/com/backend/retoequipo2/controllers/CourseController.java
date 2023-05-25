@@ -51,6 +51,7 @@ public class CourseController {
 
     @GetMapping("/api/course")
     public List<Course> getAllCourses() {
+
         return courseService.getAllCourses();
     }
 
