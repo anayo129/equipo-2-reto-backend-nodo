@@ -1,5 +1,6 @@
 package com.retoBackendend.equipo2.controllers;
 
+import com.retoBackendend.equipo2.repositories.BodyRepository;
 import com.retoBackendend.equipo2.services.BodyService;
 import com.retoBackendend.equipo2.dto.BodyNamesAndDescriptionsDto;
 import com.retoBackendend.equipo2.dto.BodyRequestDto;
@@ -19,6 +20,7 @@ public class BodyController {
 
     @Autowired
     public BodyController(BodyService bodyService){
+
         this.bodyService = bodyService;
     }
 
@@ -48,5 +50,7 @@ public class BodyController {
     public List<BodyNamesAndDescriptionsDto> getBodyNamesAndDescriptions() {
         return bodyService.getBodyNamesAndDescriptions();
     }
+
+    
 
 }

@@ -1,13 +1,10 @@
 package com.retoBackendend.equipo2.services;
 
 
-import com.retoBackendend.equipo2.models.Body;
 import com.retoBackendend.equipo2.repositories.CourseRepository;
-import com.retoBackendend.equipo2.WebConfig.NotFoundException;
+import com.retoBackendend.equipo2.config.NotFoundException;
 import com.retoBackendend.equipo2.dto.CourseNameAndDescriptionsDto;
 import com.retoBackendend.equipo2.models.Course;
-import com.retoBackendend.equipo2.repositories.BodyRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;

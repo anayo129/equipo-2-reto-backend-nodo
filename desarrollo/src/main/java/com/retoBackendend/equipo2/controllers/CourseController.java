@@ -1,7 +1,6 @@
 package com.retoBackendend.equipo2.controllers;
 
 
-import com.retoBackendend.equipo2.WebConfig.ResourceNotFoundException;
 import com.retoBackendend.equipo2.dto.CourseNameAndDescriptionsDto;
 import com.retoBackendend.equipo2.dto.CourseRequestDto;
 import com.retoBackendend.equipo2.models.Body;
@@ -15,7 +14,6 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.NoSuchElementException;
-import java.util.Optional;
 
 @RestController
 //@RequestMapping("/api/course")

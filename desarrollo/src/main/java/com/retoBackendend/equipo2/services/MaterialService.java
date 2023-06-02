@@ -2,7 +2,7 @@ package com.retoBackendend.equipo2.services;
 
 
 import com.retoBackendend.equipo2.repositories.CourseRepository;
-import com.retoBackendend.equipo2.WebConfig.NotFoundException;
+import com.retoBackendend.equipo2.config.NotFoundException;
 import com.retoBackendend.equipo2.dto.MaterialNameAndDescriptionsDto;
 import com.retoBackendend.equipo2.models.Material;
 import com.retoBackendend.equipo2.repositories.MaterialRepository;

@@ -1,4 +1,4 @@
-package com.retoBackendend.equipo2.WebConfig;
+package com.retoBackendend.equipo2.config;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

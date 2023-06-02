@@ -1,6 +1,6 @@
 package com.retoBackendend.equipo2.services;
 
-import com.retoBackendend.equipo2.WebConfig.NotFoundException;
+import com.retoBackendend.equipo2.config.NotFoundException;
 import com.retoBackendend.equipo2.dto.BodyNamesAndDescriptionsDto;
 import com.retoBackendend.equipo2.models.Body;
 import com.retoBackendend.equipo2.repositories.BodyRepository;
@@ -34,6 +34,8 @@ public class BodyService {
     }
 
 
+
+
     public List<BodyNamesAndDescriptionsDto> getBodyNamesAndDescriptions() {
         List<Body> bodies = bodyRepository.findAll();
         List<BodyNamesAndDescriptionsDto> result = new ArrayList<>();
@@ -45,4 +47,5 @@ public class BodyService {
 
         return result;
     }
+
 }
